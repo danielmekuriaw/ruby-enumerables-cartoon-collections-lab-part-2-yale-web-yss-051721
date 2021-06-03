@@ -27,7 +27,6 @@ def find_valid_calls(planeteer_calls)
   planeteer_calls.each{ |str| valid_calls.each{ |word| 
   if str == word
     return str
-  end
   }
   }
 end
