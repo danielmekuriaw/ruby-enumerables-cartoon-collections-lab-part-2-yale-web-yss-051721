@@ -24,6 +24,9 @@ def find_valid_calls(planeteer_calls)
   # Use an Enumerable to check if any elements in the passed in array match the valid calls listed above 
   # Return the first valid call found, or return nil if no valid calls are found
   
-  planeteer_calls.each{ |str| valid_calls.each{ |word| str == word}
+  planeteer_calls.each{ |str| valid_calls.each{ |word| 
+  if str == word
+    return str
+  }
   }
 end
